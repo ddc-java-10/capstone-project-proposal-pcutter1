@@ -12,7 +12,6 @@ _Meal of Fortune_ has multiple purposes - it will allow you to create meals and 
 ## Intended users
 
 * Health Coaches / Dieticians
-
     > Part of my job is to build customized meal plans for my clients. Having a shareable calendar will help them adhere to their diet and make sure they only buy healthy foods when they shop.
 
 * Busy Parents
@@ -61,7 +60,7 @@ _Meal of Fortune_ has multiple purposes - it will allow you to create meals and 
 
 * **External services**
 
-    Server will likely require access to the [Spoontacular API](https://spoonacular.com/food-api/docs) 
+    Server will likely require access to the [Spoontacular API](https://spoonacular.com/food-api/docs)
 
 ## Stretch goals/possible enhancements
 
