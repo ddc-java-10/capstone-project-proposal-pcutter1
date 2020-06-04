@@ -1,61 +1,76 @@
 ---
-title: My capstone project
-description: "Trust me, it'll be cool"
+title: Meal of Fortune
+description: The Meal Planner / Grocery Lister Extraordinaire!
 layout: default
 ---
 
 ## Summary
 
-Replace this paragraph with one or more paragraphs summarizing the purpose and operation of the software you propose to develop in this project.
+_Meal of Fortune_ has multiple purposes - it will allow you to create meals and add them to a shareable calendar. It will also generate a grocery list based on your planned meals. **AND** it can randomly generate a meal plan for your week if you have trouble deciding what you would like to eat!
+
 
 ## Intended users
 
-Write a bullet list here, including at least 2 different types of intended users. Make it reasonably specific; simply saying "Anyone who likes games" (for example) is not sufficiently specific.
+* Health Coaches / Dieticians
 
-For each type of intended user, include at least 1 _user story_. A user story is usually just 1 simple sentence (no more than 2 sentences), in the voice of the intended user, stating a specific task that the user needs to perform, and the benefit that will be obtained. The simplest user stories take the form 
+    > Part of my job is to build customized meal plans for my clients. Having a shareable calendar will help them adhere to their diet and make sure they only buy healthy foods when they shop.
 
-> As a <type of intended user (_who_)> I want to <goal (_what_)> so that <benefit (_why_).
+* Busy Parents
+    > Planning and prepping meals for the week can be very time consuming. Between raising my kids and my job, I hardly have the time to think a week or two out. I could really use an app that would help take at least one thing off my mental plate.
 
-Please avoid writing too much for the user story. In particular, if the way the user story is written makes it difficult to see the _who_, _what_, and _why_, then you probably need to re-write it more directly. (On the other hand, a user story should not simply be a re-statement of the intended user description.)
-
-Here is one (silly) example of an intended user, along with a user story. Please note not only the conceptual structure, but the Markdown syntax used.
-
-* People who like to use randomness in their decision making.
-
-    > As someone who enjoys randomness in my life, I need an app that lets me flip a virtual coin or roll one or more virtual dice, so that I can base my decisions on randomness, without having to carry coins or dice in my pockets.
+* The Indecisive Eater(s)
+    > My roommate and I can never make up our minds what we want to eat and often put off coming up with a dinner plan until we're already hungry, so we default to eating out. If we knew what we were going to cook ahead of time, we could save a lot of money by cooking for ourselves.
 
 ## Client component
 
 * **Functionality**
 
-    List the key functional aspects that will be provided by the user interface&mdash;i.e. tell us what the user will be able to do in the GUI.
+    User will be able to:
+    * Input a name, ingredients and cook time information to 'Create a Meal' that they can then drop onto a calendar in a Breakfast, Lunch, or Dinner slot for any given day.
+    * Tag meals as adhering to specific dietary categories such as Gluten Free, Dairy Free, Vegetarian, and Vegan.
+    * Upload Meals and Calendars online to share with family and friends.
+    * Plan up to a month of meals in advance and see information such as total calorie count for the day based on the planned meals added to the calendar.
+    * Generate a shopping list of the ingredients from the meals on their calendar.
+    * Save multiple shopping lists
+    * Randomly populate meals to their calendar for a specified number of days.
+    * Search an online database for Meals or Calendars.
 
 * **Persistent data**
 
-    Summarize, in general terms, what content will be stored on the client side. This should include any information that a user of your system should expect to be maintained locally (i.e. without connection to a server) across multiple sessions of use, on a single device. 
-    
+    Persistent data will include:
+    * Meals (both downloaded and created)
+    * User's calendar(s) (both downloaded and created)
+    * Shopping lists
+
 * **Device/external services**
 
-    If the client component will need to access special services of the device (e.g. sensors, contacts, messaging), list them here. Also, if the client component will need to access already-existing external services (e.g. real-time weather data, Open Trivia Database), those should also be listed here; any such references to external services should include links to the main page or API description page for the service.
-    
-For listing multiple items, please use bullet lists (or ordered lists, if order is relevant), not just separate lines or paragraphs of text.
-    
+    * [Google Calendar API](https://developers.google.com/calendar)
+    * [Spoontacular API](https://spoonacular.com/food-api/docs)
+
 ## Server component
 
 * **Functionality**
 
-    List the key functional aspects that will be provided by the server component&mdash;i.e. tell us what parts of the system functionality will be performed by the server.
+  The server will be able to allow users to store and retrieve customized meal calendars. It will also allow user to store and retrieve meals and meal information.
 
 * **Persistent data**
 
-    Summarize, in general terms, what content will be stored on the server side. This should include any information that a user of your system should expect to be accessible across multiple sessions of use, even if accessed from separate devices. In addition, if there will be data originating from some users that will then be accessible by other users, it should be part of the persistent data on the server. 
-    
+    Server side content will include:
+      * monthly and weekly pre-made meal calendars uploaded by users
+      * meal profiles which include their ingredients, cook time, health data and tags for dietary restrictions
+
 * **External services**
 
-    If the server component will need to access already-existing external services (e.g. stock prices, Open Movie Database), those should also be listed here. Any such references to external services should include links to the main page or API description page for the service.
-    
-For listing multiple items, please use bullet lists (or ordered lists, if order is relevant), not just separate lines or paragraphs of text.
-    
-## Stretch goals/possible enhancements 
+    Server will likely require access to the [Spoontacular API](https://spoonacular.com/food-api/docs) 
 
-If you can identify functional elements of the software that you think might not be achievable in the scope of the project, but which would nonetheless add significant value if you were able to include them, list them here. For now, we recommend listing them in order of complexity/amount of work, from the least to the most.
+## Stretch goals/possible enhancements
+
+* Added functionality where you can list the ingredients you have and it will return a list of meals you can cook
+
+* Added functionality which allocates meals with shorter cooking times based on parameters set by user (.e.g. I only have an hour for lunch, so I only want lunch meals to be ones that take 30 min or less to cook)
+
+* Added information about health data (e.g. calories, % daily fiber, etc.)
+
+* Added customization for dietary restrictions (e.g. gluten free meals only, dairy free meals only)
+
+* Link cooking tutorial videos to meals

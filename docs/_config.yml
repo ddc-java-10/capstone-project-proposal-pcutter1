@@ -4,6 +4,5 @@ show_downloads: true
 titles_from_headings:
   enabled: false
 author:
-  name: "Java+Android Student"
-  href: "https://ddc-java.github.io"
-  
+  name: "Paul Cutter"
+  href: "https://github.com/pcutter1"
