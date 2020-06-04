@@ -56,6 +56,7 @@ _Meal of Fortune_ has multiple purposes - it will allow you to create meals and 
 
     Server side content will include:
       * monthly and weekly pre-made meal calendars uploaded by users
+      
       * meal profiles which include their ingredients, cook time, health data and tags for dietary restrictions
 
 * **External services**
